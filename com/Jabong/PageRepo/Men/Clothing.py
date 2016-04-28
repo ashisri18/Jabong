@@ -1,5 +1,6 @@
 from com.Jabong.GenericLib.Initilization import *
 from selenium.webdriver.common.action_chains import ActionChains
+from com.Jabong.PageRepo.Home.Home_Page_Constants import *
 
 class ClothingCategory(Initilization):
 
@@ -8,6 +9,7 @@ class ClothingCategory(Initilization):
     def clickMenBlock(cls):
         menBlock = cls.driver.find_element_by_xpath("//ul[@id='mainTopNav']/li[@class='nav-men']")
         menBlock.click()
+#        cls.driver.find_element_by_xpath(Home_Page_Constants.Men_Link).click()
         time.sleep(2)
 
     def clickSuitsBlazers_CC(cls):
