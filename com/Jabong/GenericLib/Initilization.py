@@ -4,7 +4,9 @@ from selenium import webdriver
 
 class Initilization(unittest.TestCase):
 
-    driver = webdriver.Firefox()
+    chrimeDriver = "D:\CBT_Automation\Python\Workspace_Python\Jabong\chromedriver.exe"
+    driver = webdriver.Chrome(chrimeDriver)
+#    driver = webdriver.Firefox()
 
     def setUp(cls):
 
