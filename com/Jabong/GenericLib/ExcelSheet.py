@@ -1,9 +1,4 @@
 import xlrd
-<<<<<<< HEAD
-workbook = xlrd.open_workbook('my_file_name.xls')
-worksheet = workbook.sheet_by_name('My_Sheet_Name')
-sheet.cell(0, 0).value
-=======
 import sys, traceback
 
 class ExcelSheet():
@@ -12,7 +7,7 @@ class ExcelSheet():
         # self.rowNum = rowNum
         # self.colNum = colNum
         # self.sheetName = sheetName
-        self.excelPath = "D:\CBT_Automation\Python\Workspace_Python\Jabong\TestData.xlsx"
+        self.excelPath = "E:\Automation\BackUp\Git\Jabong\TestData.xlsx"
 
     def readExcelData(self,sheetName, rowNum, colNum):
         workbook = xlrd.open_workbook(self.excelPath)
@@ -24,7 +19,7 @@ class ExcelSheet():
     def readData(self,testCaseId,sheetName):
             data = []
     #    try:
-            workbook = xlrd.open_workbook("D:\CBT_Automation\Python\Workspace_Python\Jabong\TestData.xlsx")
+            workbook = xlrd.open_workbook("E:\Automation\BackUp\Git\Jabong\TestData.xlsx")
             worksheet = workbook.sheet_by_name(sheetName)
             # print (worksheet)
             for current_Row in range(worksheet.nrows):
@@ -53,4 +48,4 @@ class ExcelSheet():
 
 
 
->>>>>>> efe89f1784cd481c10affe91967db263f955dbe4
+
