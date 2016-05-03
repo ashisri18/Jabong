@@ -19,13 +19,14 @@ class ExcelSheet():
     def readData(self,testCaseId,sheetName):
             data = []
     #    try:
-            workbook = xlrd.open_workbook("E:\Automation\BackUp\Git\Jabong\TestData.xlsx")
+            workbook = xlrd.open_workbook("D:\CBT_Automation\Python\Workspace_Python\Jabong\TestData.xlsx")
             worksheet = workbook.sheet_by_name(sheetName)
             # print (worksheet)
             for current_Row in range(worksheet.nrows):
                 # print(worksheet.row(current_Row)[0])
                 print(testCaseId)
                 current_Id = str(worksheet.row(current_Row)[0])[6:15]
+
                 print(current_Id)
                 if current_Id == testCaseId:
                     print("Inside If loop.")
